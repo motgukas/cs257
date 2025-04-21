@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tsunami API</title>
+</head>
+<body>
+    <pre>Tsunami API: endpoint reference
+All responses are in JSON
+
+REQUEST: /
+RESPONSE:
+    A greeting from this API to you.
+
+REQUEST: /help
+RESPONSE:
+    This message
+
+REQUEST: /tsunami/{country_name}/ids
+RESPONSE:
+    A list of all of the recorded tsunami IDS that have occurred on the territory of the specified country.
+
+REQUEST: /tsunami/{country_name}/ids/years[?before={YEAR}&amp;after={YEAR}]
+RESPONSE:
+    A list of all of the recorded tsunami IDS that have occurred in the specified country.
+    If before={YEAR} is specified, only tsunamis that occurred before that year are returned.
+    If after={YEAR} is specified, only tsunamis that occurred after that year are returned.
+
+REQUEST: /tsunami/{country_name}/count/years[?before={YEAR}&amp;after={YEAR}]
+RESPONSE:
+    A count of the amount of recorded tsunamis that have occurred in the specified country between the specified years.
+
+
+REQUEST: /tsunami/{country_name}/damage
+RESPONSE:
+    A recorded amount of millions of dollars of damage caused from the tsunamis in the specified country.
+
+REQUEST: /tsunami/years[?before={YEAR}&amp;after={YEAR}]
+RESPONSE:
+    A list of all of the countries that have had recorded tsunamis either before or after the specified year.
+
+    </pre>
+</body>
+</html>
+
